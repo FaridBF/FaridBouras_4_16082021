@@ -7,6 +7,80 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Header */
+
+.nav-invert .navbar-header,
+.nav-invert .navbar-brand {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-center .navbar-header {
+  width: 100%;
+}
+.nav-center .navbar-header,
+.nav-center .navbar-brand,
+.nav-center .nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.nav-invert .navbar-header,
+.nav-invert .navbar-brand {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 3px 15px;
+  font-size: 25px;
+  font-weight: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.navbar-brand img {
+  max-height: 200px;
+  margin: 0 5px 0 0;
+  display: inline;
+}
+
+.navbar-brand img[src$="svg"] {
+  min-width: 100px;
+}
+
+.nav-center .navbar-brand img {
+  margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.d-bloc .navbar-toggle .icon-bar {
+  background: rgba(255, 255, 255, 1);
+}
+
+.d-bloc .navbar-toggle .icon-bar {
+  background: rgba(255, 255, 255, 1);
+}
+
+.l-bloc .navbar-toggle .icon-bar {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Header End */
+
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -25,17 +99,6 @@ a:hover {
   width: 100%;
   z-index: 100000;
   background: #ffffff url("img/pageload-spinner.gif") no-repeat center center;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
 }
 
 .bloc {
@@ -169,10 +232,6 @@ a:hover {
   height: 150px;
 }
 
-.d-bloc .navbar-toggle .icon-bar {
-  background: rgba(255, 255, 255, 1);
-}
-
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
   color: rgba(255, 255, 255, 1);
@@ -268,10 +327,6 @@ a:hover {
   color: rgba(0, 0, 0, 1);
 }
 
-.l-bloc .navbar-toggle .icon-bar {
-  color: rgba(0, 0, 0, 0.6);
-}
-
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
@@ -318,29 +373,6 @@ a:hover {
   font-size: 22px;
 }
 
-.navbar-brand {
-  height: auto;
-  padding: 3px 15px;
-  font-size: 25px;
-  font-weight: normal;
-  font-weight: 600;
-  line-height: 44px;
-}
-
-.navbar-brand img {
-  max-height: 200px;
-  margin: 0 5px 0 0;
-  display: inline;
-}
-
-.navbar-brand img[src$="svg"] {
-  min-width: 100px;
-}
-
-.nav-center .navbar-brand img {
-  margin: 0;
-}
-
 .navbar .nav {
   padding-top: 2px;
   margin-right: -16px;
@@ -381,13 +413,6 @@ a:hover {
   float: left;
 }
 
-.nav-invert .navbar-header,
-.nav-invert .navbar-brand {
-  float: right;
-  position: relative;
-  z-index: 2;
-}
-
 @media (min-width: 768px) {
   .site-navigation {
     position: absolute;
@@ -406,15 +431,6 @@ a:hover {
   }
   .nav-center {
     text-align: center;
-  }
-  .nav-center .navbar-header {
-    width: 100%;
-  }
-  .nav-center .navbar-header,
-  .nav-center .navbar-brand,
-  .nav-center .nav > li {
-    float: none;
-    display: inline-block;
   }
   .nav-center .site-navigation {
     position: relative;
