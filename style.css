@@ -303,9 +303,19 @@ a:hover {
   font-size: 32px;
 }
 
+.citation {
+  font-style: italic;
+  padding: 0 30px;
+  margin-bottom: 3px;
+}
+
 .navbar {
   margin-bottom: 0;
   z-index: 1;
+}
+
+.bloc-p-accueil {
+  font-size: 22px;
 }
 
 .navbar-brand {
