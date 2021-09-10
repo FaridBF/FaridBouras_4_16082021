@@ -769,6 +769,7 @@ h4 {
 
 .portfolio-thumb {
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .portfolio-row {
@@ -800,7 +801,6 @@ h4 {
 
 .bgc-atomic-tangerine {
   background-color: #f3976c;
-  /* min-width: 350px; */
 }
 
 .tc-white {
@@ -1068,7 +1068,6 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -15px;
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 15px;
